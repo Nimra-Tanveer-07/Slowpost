@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letters to the future · Slowpost</title>
+    <meta name="description" content="Slowpost mails your letters to the future, on the date you choose.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <style>
+        body {
+            font-family: 'DM Sans', system-ui, sans-serif
+        }
+
+        .serif {
+            font-family: 'Young Serif', Georgia, serif
+        }
+
+        .airmail {
+            background: repeating-linear-gradient(135deg, #D7263D 0 14px, #fff 14px 24px, #1D4E89 24px 38px, #fff 38px 48px)
+        }
+
+        :focus-visible {
+            outline: 3px solid #1D4E89;
+            outline-offset: 3px
+        }
+    </style>
+</head>
+
+<body class="bg-[#F6F9FC] text-[#14213D] antialiased">
+    <div class="airmail h-2"></div>
+    <header class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
+        <a href="index.html" class="serif text-2xl text-[#1D4E89]">Slowpost</a>
+        <nav class="hidden md:flex gap-7 text-[15px]"><a href="index.html"
+                class="text-[#D7263D] font-semibold py-1">Home</a><a href="how-it-works.html"
+                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">How it works</a><a href="letters.html"
+                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Letters</a><a href="pricing.html"
+                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Pricing</a><a href="contact.html"
+                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Contact</a></nav>
+        <details class="md:hidden relative">
+            <summary class="cursor-pointer list-none px-4 py-2 rounded-full border border-[#14213D]/20 text-sm">Menu
+            </summary>
+            <nav
+                class="absolute right-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-[#14213D]/10 p-4 flex flex-col gap-2 z-10">
+                <a href="index.html" class="text-[#D7263D] font-semibold py-1">Home</a><a href="how-it-works.html"
+                    class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">How it works</a><a href="letters.html"
+                    class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Letters</a><a href="pricing.html"
+                    class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Pricing</a><a href="contact.html"
+                    class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Contact</a></nav>
+        </details>
+    </header>
+    <main>
+        <section class="max-w-6xl mx-auto px-5 pt-10 pb-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="serif text-5xl md:text-6xl leading-[1.05]">Write it today. Open it when it matters.</h1>
+                <p class="mt-6 text-lg leading-relaxed max-w-md text-[#14213D]/80">Slowpost keeps your letter sealed and
+                    mails it on the date you choose. Next month, next year or ten years from now.</p>
+                <div class="mt-8 flex flex-wrap gap-3"><a href="write.html"
+                        class="inline-block rounded-full bg-[#D7263D] text-white font-medium px-7 py-3 hover:bg-[#b81d32] transition">Write
+                        a letter</a><a href="how-it-works.html"
+                        class="inline-block rounded-full border-2 border-[#1D4E89] text-[#1D4E89] font-medium px-7 py-3 hover:bg-[#1D4E89] hover:text-white transition">See
+                        how it works</a></div>
+            </div>
+            <div class="airmail p-3 rounded-lg shadow-xl rotate-2">
+                <div class="bg-[#FFFEFB] rounded p-8 min-h-[280px]">
+                    <p class="text-sm text-[#14213D]/60">Postmark: 25 Oct 2026</p>
+                    <p class="serif text-2xl mt-6 text-[#1D4E89]">To: Me, on 25 Oct 2027</p>
+                    <p class="mt-5 leading-relaxed">Dear future me, by now you have either finished the thing or let it
+                        go. Be kind about whichever happened. Check on the people I promised to call.</p>
+                    <p class="mt-5 text-right serif text-[#D7263D]">Sealed. Waiting.</p>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-6xl mx-auto px-5 mt-20 grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-8 border border-[#14213D]/10">
+                <h2 class="serif text-xl">Real paper</h2>
+                <p class="mt-3 leading-relaxed text-[#14213D]/75">Your words are printed on heavy stock and posted in a
+                    stamped airmail envelope.</p>
+            </div>
+            <div class="bg-[#1D4E89] text-white rounded-2xl p-8 md:-translate-y-4">
+                <h2 class="serif text-xl">Delivered on your date</h2>
+                <p class="mt-3 leading-relaxed text-white/85">Pick any day from 30 days to 10 years away. We hold it
+                    until then, and we remind you to keep your address current.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 border border-[#14213D]/10">
+                <h2 class="serif text-xl">Private by default</h2>
+                <p class="mt-3 leading-relaxed text-[#14213D]/75">Letters are stored encrypted and never read by our
+                    team. Only the recipient sees them.</p>
+            </div>
+        </section>
+        <section class="max-w-4xl mx-auto px-5 mt-24 text-center">
+            <p class="serif text-3xl md:text-4xl leading-snug">"I forgot I had written it. Opening it felt like getting
+                a hug from three years ago."</p>
+            <p class="mt-4 text-[#14213D]/60">Amna, Slowpost customer since 2024</p>
+        </section>
+    </main>
+    <footer class="mt-24 bg-[#14213D] text-white/80">
+        <div class="airmail h-2"></div>
+        <div class="max-w-6xl mx-auto px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
+            <div>
+                <p class="serif text-xl text-white">Slowpost</p>
+                <p class="mt-3 max-w-xs leading-relaxed">Letters to the future, sealed today and delivered on the day
+                    you pick.</p>
+            </div>
+            <div class="flex flex-col gap-2"><a href="index.html" class="hover:text-white">Home</a><a
+                    href="how-it-works.html" class="hover:text-white">How it works</a><a href="letters.html"
+                    class="hover:text-white">Letters</a><a href="pricing.html" class="hover:text-white">Pricing</a><a
+                    href="contact.html" class="hover:text-white">Contact</a></div>
+            <div>
+                <p>hello@slowpost.example</p>
+                <p class="mt-2">Mon–Fri, 9am–5pm</p>
+                <p class="mt-6 text-white/50">© 2026 Slowpost. Demo site.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
