@@ -1,365 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Write a letter · Slowpost</title>
-    <meta name="description" content="Slowpost mails your letters to the future, on the date you choose.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-    <style>
-        body {
-            font-family: 'DM Sans', system-ui, sans-serif
-        }
-
-        .serif {
-            font-family: 'Young Serif', Georgia, serif
-        }
-
-        .airmail {
-            background: repeating-linear-gradient(135deg, #D7263D 0 14px, #fff 14px 24px, #1D4E89 24px 38px, #fff 38px 48px)
-        }
-
-        :focus-visible {
-            outline: 3px solid #1D4E89;
-            outline-offset: 3px
-        }
-    </style>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Kalam&family=Homemade+Apple&display=swap"
-        rel="stylesheet">
-    <style>
-        .paper-cream {
-            background: #F7EFD9
-        }
-
-        .paper-white {
-            background: #fff
-        }
-
-        .paper-kraft {
-            background: #D9BC8E
-        }
-
-        .paper-blue {
-            border: 10px solid transparent;
-            background: linear-gradient(#E4EEF8, #E4EEF8) padding-box, repeating-linear-gradient(135deg, #D7263D 0 14px, #fff 14px 24px, #1D4E89 24px 38px, #fff 38px 48px) border-box
-        }
-
-        .paper-lined {
-            background: repeating-linear-gradient(#FFFEFB 0 31px, #cfe0f0 31px 32px)
-        }
-
-        #pv {
-            line-height: 32px;
-            white-space: pre-wrap;
-            overflow-wrap: anywhere
-        }
-    </style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Write a letter · Slowpost</title>
+<meta name="description" content="Slowpost mails your letters to the future, on the date you choose.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+body{font-family:'DM Sans',system-ui,sans-serif}
+.serif{font-family:'Young Serif',Georgia,serif}
+.airmail{background:repeating-linear-gradient(135deg,#D7263D 0 14px,#fff 14px 24px,#1D4E89 24px 38px,#fff 38px 48px)}
+:focus-visible{outline:3px solid #1D4E89;outline-offset:3px}
+</style><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Kalam&family=Homemade+Apple&display=swap" rel="stylesheet">
+<style>
+.paper-cream{background:#F7EFD9}.paper-white{background:#fff}.paper-kraft{background:#D9BC8E}
+.paper-blue{border:10px solid transparent;background:linear-gradient(#E4EEF8,#E4EEF8) padding-box,repeating-linear-gradient(135deg,#D7263D 0 14px,#fff 14px 24px,#1D4E89 24px 38px,#fff 38px 48px) border-box}
+.paper-lined{background:repeating-linear-gradient(#FFFEFB 0 31px,#cfe0f0 31px 32px)}
+#pv{line-height:32px;white-space:pre-wrap;overflow-wrap:anywhere}
+</style>
 </head>
-
 <body class="bg-[#F6F9FC] text-[#14213D] antialiased">
-    <div class="airmail h-2"></div>
-    <header class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
-        <a href="index.html" class="serif text-2xl text-[#1D4E89]">Slowpost</a>
-        <nav class="hidden md:flex gap-7 text-[15px]"><a href="index.html"
-                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Home</a><a href="how-it-works.html"
-                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">How it works</a><a href="letters.html"
-                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Letters</a><a href="pricing.html"
-                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Pricing</a><a href="contact.html"
-                class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Contact</a></nav>
-        <details class="md:hidden relative">
-            <summary class="cursor-pointer list-none px-4 py-2 rounded-full border border-[#14213D]/20 text-sm">Menu
-            </summary>
-            <nav
-                class="absolute right-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-[#14213D]/10 p-4 flex flex-col gap-2 z-10">
-                <a href="index.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Home</a><a
-                    href="how-it-works.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">How it works</a><a
-                    href="letters.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Letters</a><a
-                    href="pricing.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Pricing</a><a
-                    href="contact.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Contact</a></nav>
-        </details>
-    </header>
-    <main>
-        <section class="max-w-6xl mx-auto px-5 pt-6">
-            <h1 class="serif text-4xl md:text-5xl">Write your letter</h1>
-            <p class="mt-3 text-[#14213D]/75 max-w-xl leading-relaxed">Compose it, pick the paper and ink, then pay only
-                when you are happy with it.</p>
-            <div class="mt-10 grid lg:grid-cols-2 gap-10">
-                <form id="f" class="space-y-8 order-2 lg:order-1" novalidate>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">1. Plan</legend>
-                        <div class="grid grid-cols-3 gap-3"><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="plan" value="postcard" class="peer sr-only"><span
-                                    class="block rounded-lg border border-[#14213D]/20 py-3 font-medium peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">Postcard</span><span
-                                    class="block mt-1">Postcard · $5</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="plan"
-                                    value="letter" class="peer sr-only" checked><span
-                                    class="block rounded-lg border border-[#14213D]/20 py-3 font-medium peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">Letter</span><span
-                                    class="block mt-1">Letter · $12</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="plan"
-                                    value="capsule" class="peer sr-only"><span
-                                    class="block rounded-lg border border-[#14213D]/20 py-3 font-medium peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">Time
-                                    capsule</span><span class="block mt-1">Time capsule · $29</span></label></div>
-                    </fieldset>
-                    <fieldset class="grid sm:grid-cols-2 gap-4">
-                        <legend class="block text-sm font-medium mb-1 sm:col-span-2">2. Who is it for?</legend>
-                        <div><label class="block text-sm font-medium mb-1" for="rn">Recipient name</label><input id="rn"
-                                class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
-                        <div><label class="block text-sm font-medium mb-1" for="em">Your email</label><input id="em"
-                                type="email" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3">
-                        </div>
-                        <div class="sm:col-span-2"><label class="block text-sm font-medium mb-1" for="ad">Delivery
-                                address</label><input id="ad"
-                                class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
-                        <div><label class="block text-sm font-medium mb-1" for="ci">City</label><input id="ci"
-                                class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
-                        <div><label class="block text-sm font-medium mb-1" for="co">Country</label><input id="co"
-                                class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">3. Delivery date</legend><input id="dt"
-                            type="date" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3">
-                        <p id="dh" class="mt-1 text-sm text-[#14213D]/60"></p>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">4. Paper</legend>
-                        <div class="grid grid-cols-5 gap-3"><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="paper" value="cream" class="peer sr-only" checked><span
-                                    class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#F7EFD9"></span><span class="block mt-1">Classic
-                                    cream</span></label><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="paper" value="white" class="peer sr-only"><span
-                                    class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#FFFFFF"></span><span class="block mt-1">Bright
-                                    white</span></label><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="paper" value="lined" class="peer sr-only"><span
-                                    class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#CFE0F0"></span><span
-                                    class="block mt-1">Lined</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="paper" value="blue"
-                                    class="peer sr-only"><span
-                                    class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#1D4E89"></span><span
-                                    class="block mt-1">Airmail</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="paper"
-                                    value="kraft" class="peer sr-only"><span
-                                    class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#D9BC8E"></span><span class="block mt-1">Kraft</span></label>
-                        </div>
-                        <div class="mt-5"><label class="block text-sm font-medium mb-1" for="bgf">Or use your own page
-                                as the background</label>
-                            <input id="bgf" type="file" accept="image/png,image/jpeg,image/webp"
-                                class="block w-full text-sm file:mr-3 file:rounded-full file:border-0 file:bg-[#1D4E89] file:text-white file:px-5 file:py-2 file:cursor-pointer">
-                            <p id="bgi" class="hidden mt-2 text-sm"><span id="bgn"></span> <button type="button"
-                                    id="bgx" class="underline text-[#D7263D] ml-2">Remove</button></p>
-                            <label class="mt-3 flex items-center gap-2 text-sm"><input type="checkbox" id="ov" checked>
-                                Add a soft white layer so the writing stays easy to read</label>
-                            <p class="mt-1 text-xs text-[#14213D]/60">JPG, PNG or WebP, up to 5 MB.</p>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">5. Ink colour</legend>
-                        <div class="grid grid-cols-5 gap-3"><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="ink" value="#14213D" class="peer sr-only" checked><span
-                                    class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#14213D"></span><span class="block mt-1">Navy</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="ink"
-                                    value="#111111" class="peer sr-only"><span
-                                    class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#111111"></span><span
-                                    class="block mt-1">Black</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="ink"
-                                    value="#B3202F" class="peer sr-only"><span
-                                    class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#B3202F"></span><span class="block mt-1">Red</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="ink"
-                                    value="#1E6B4B" class="peer sr-only"><span
-                                    class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#1E6B4B"></span><span
-                                    class="block mt-1">Green</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="ink"
-                                    value="#5B3FA0" class="peer sr-only"><span
-                                    class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="background:#5B3FA0"></span><span class="block mt-1">Violet</span></label>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">6. Handwriting</legend>
-                        <div class="grid grid-cols-3 gap-3"><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="font" value="Caveat" class="peer sr-only" checked><span
-                                    class="block rounded-lg border border-[#14213D]/20 py-2 text-lg peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="font-family:'Caveat'">Hello</span><span
-                                    class="block mt-1">Caveat</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="font" value="Kalam"
-                                    class="peer sr-only"><span
-                                    class="block rounded-lg border border-[#14213D]/20 py-2 text-lg peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="font-family:'Kalam'">Hello</span><span
-                                    class="block mt-1">Kalam</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="font"
-                                    value="Homemade Apple" class="peer sr-only"><span
-                                    class="block rounded-lg border border-[#14213D]/20 py-2 text-lg peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4"
-                                    style="font-family:'Homemade Apple'">Hello</span><span
-                                    class="block mt-1">Homemade</span></label></div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">7. Stamp</legend>
-                        <div class="grid grid-cols-4 gap-3"><label class="cursor-pointer text-center text-xs"><input
-                                    type="radio" name="stamp" value="🌍" class="peer sr-only" checked><span
-                                    class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">🌍</span><span
-                                    class="block mt-1">Globe</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="🗼"
-                                    class="peer sr-only"><span
-                                    class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">🗼</span><span
-                                    class="block mt-1">Tower</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="💌"
-                                    class="peer sr-only"><span
-                                    class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">💌</span><span
-                                    class="block mt-1">Heart</span></label><label
-                                class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="⭐"
-                                    class="peer sr-only"><span
-                                    class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">⭐</span><span
-                                    class="block mt-1">Star</span></label></div>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">8. Photos</legend>
-                        <p id="phn" class="text-sm text-[#14213D]/60 mb-2"></p>
-                        <input id="phf" type="file" accept="image/png,image/jpeg,image/webp" multiple
-                            class="block w-full text-sm file:mr-3 file:rounded-full file:border-0 file:bg-[#1D4E89] file:text-white file:px-5 file:py-2 file:cursor-pointer">
-                        <div id="phg" class="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-3"></div>
-                        <p class="mt-2 text-xs text-[#14213D]/60">JPG, PNG or WebP, up to 5 MB each.</p>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="block text-sm font-medium mb-1">9. Your letter</legend>
-                        <textarea id="tx" rows="9"
-                            class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"
-                            placeholder="Dear future me..."></textarea>
-                        <p id="cc" class="mt-1 text-sm text-[#14213D]/60 text-right"></p>
-                        <label class="block text-sm font-medium mb-1 mt-4" for="so">Sign-off</label><input id="so"
-                            value="With love," class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3">
-                    </fieldset>
-                    <p id="err" class="text-[#D7263D] font-medium" role="alert"></p>
-                    <button type="button" id="rv"
-                        class="rounded-full bg-[#D7263D] text-white font-medium px-8 py-3 hover:bg-[#b81d32] transition">Review
-                        and confirm</button>
-                </form>
-                <div class="order-1 lg:order-2">
-                    <div class="lg:sticky lg:top-6">
-                        <p class="text-sm font-medium mb-2">Live preview</p>
-                        <div id="pp" class="paper-cream rounded-lg shadow-xl p-8 min-h-[420px] relative">
-                            <div id="st"
-                                class="absolute top-4 right-4 text-3xl border-2 border-dashed border-[#14213D]/30 rounded p-1 bg-white/50">
-                                🌍</div>
-                            <p id="to" class="text-sm opacity-60 pr-20" style="font-family:'DM Sans'"></p>
-                            <div id="pv" class="mt-6"></div>
-                            <p id="sg" class="mt-6"></p>
-                            <div id="pstrip" class="mt-6 flex flex-wrap gap-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section id="rw" class="hidden mt-14 max-w-xl mx-auto bg-white rounded-2xl border border-[#14213D]/10 p-8"
-                aria-live="polite">
-                <h2 class="serif text-3xl">Confirm your order</h2>
-                <dl id="sm" class="mt-6 space-y-2 text-[15px]"></dl>
-                <p class="mt-6 text-sm text-[#14213D]/60">Once paid, your letter is locked and stored until your
-                    delivery date.</p>
-                <div class="mt-6 flex flex-wrap gap-3"><button type="button" id="ed"
-                        class="rounded-full border-2 border-[#1D4E89] text-[#1D4E89] font-medium px-6 py-3 hover:bg-[#1D4E89] hover:text-white transition">Edit
-                        letter</button>
-                    <button type="button" id="pay"
-                        class="rounded-full bg-[#D7263D] text-white font-medium px-8 py-3 hover:bg-[#b81d32] transition">Pay
-                        now</button>
-                </div>
-                <p id="ms" class="mt-4 text-sm text-[#1D4E89]"></p>
-            </section>
-        </section>
-    </main>
-    <footer class="mt-24 bg-[#14213D] text-white/80">
-        <div class="airmail h-2"></div>
-        <div class="max-w-6xl mx-auto px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
-            <div>
-                <p class="serif text-xl text-white">Slowpost</p>
-                <p class="mt-3 max-w-xs leading-relaxed">Letters to the future, sealed today and delivered on the day
-                    you pick.</p>
-            </div>
-            <div class="flex flex-col gap-2"><a href="index.html" class="hover:text-white">Home</a><a
-                    href="how-it-works.html" class="hover:text-white">How it works</a><a href="letters.html"
-                    class="hover:text-white">Letters</a><a href="pricing.html" class="hover:text-white">Pricing</a><a
-                    href="contact.html" class="hover:text-white">Contact</a></div>
-            <div>
-                <p>hello@slowpost.example</p>
-                <p class="mt-2">Mon–Fri, 9am–5pm</p>
-                <p class="mt-6 text-white/50">© 2026 Slowpost. Demo site.</p>
-            </div>
-        </div>
-    </footer>
-    <script>
-        const API_URL = "";            // e.g. "/api/orders" once your backend exists
-        const PAY_LINKS = { postcard: "", letter: "", capsule: "" }; // paste gateway links here
-        const PL = { postcard: { n: "Postcard", p: 5, y: 1, c: 600, ph: 0 }, letter: { n: "Letter", p: 12, y: 5, c: 2500, ph: 3 }, capsule: { n: "Time capsule", p: 29, y: 10, c: 5000, ph: 10 } };
-        const $ = id => document.getElementById(id), f = $("f"), v = n => f.elements[n].value;
-        const fmt = s => new Date(s + "T00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
-        const iso = (d) => d.toISOString().slice(0, 10);
-        const q = new URLSearchParams(location.search).get("plan"); if (PL[q]) f.elements.plan.value = q;
-        function upd() {
-            const p = PL[v("plan")], t = $("tx");
-            t.maxLength = p.c; $("cc").textContent = t.value.length + " / " + p.c + " characters";
-            const a = new Date(); a.setDate(a.getDate() + 30); const b = new Date(); b.setFullYear(b.getFullYear() + p.y);
-            $("dt").min = iso(a); $("dt").max = iso(b); $("dh").textContent = "Choose a date between " + fmt(iso(a)) + " and " + fmt(iso(b)) + ".";
-            const pp = $("pp"); pp.className = (bg ? "" : "paper-" + v("paper")) + " rounded-lg shadow-xl p-8 min-h-[420px] relative";
-            pp.style.backgroundImage = bg ? (($("ov").checked ? "linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.55))," : "") + "url(" + bg.url + ")") : ""; pp.style.backgroundSize = bg ? "cover" : ""; pp.style.backgroundPosition = bg ? "center" : "";
-            if (photos.length > p.ph) { while (photos.length > p.ph) URL.revokeObjectURL(photos.pop().url); renderPh(); }
-            $("phf").disabled = !p.ph; $("phn").textContent = p.ph ? "Your plan allows up to " + p.ph + " photos (" + photos.length + " added)." : "Postcards do not include photos. Choose Letter or Time capsule to attach some.";
-            pp.style.color = v("ink"); const fn = v("font"); pp.style.fontFamily = "'" + fn + "',cursive";
-            pp.style.fontSize = fn === "Homemade Apple" ? "16px" : fn === "Kalam" ? "19px" : "24px";
-            $("st").textContent = v("stamp");
-            $("to").textContent = ($("rn").value ? "To: " + $("rn").value : "To: ...") + ($("dt").value ? "  ·  Arrives " + fmt($("dt").value) : "");
-            $("pv").textContent = t.value || "Your words will appear here as you type."; $("sg").textContent = $("so").value;
-        }
-        let bg = null; const photos = [];
-        const OK = ["image/jpeg", "image/png", "image/webp"], MAX = 5 * 1024 * 1024;
-        const bad = x => !OK.includes(x.type) ? "Please choose JPG, PNG or WebP images." : x.size > MAX ? "Each image must be under 5 MB." : "";
-        function renderPh() {
-            $("phg").replaceChildren(...photos.map((o, i) => { const d = document.createElement("div"); d.className = "relative"; const im = document.createElement("img"); im.src = o.url; im.alt = "Photo " + (i + 1); im.className = "h-20 w-full object-cover rounded-lg"; const b = document.createElement("button"); b.type = "button"; b.textContent = "\u00d7"; b.setAttribute("aria-label", "Remove photo " + (i + 1)); b.className = "absolute -top-2 -right-2 h-6 w-6 rounded-full bg-[#D7263D] text-white text-sm leading-6"; b.onclick = () => { URL.revokeObjectURL(o.url); photos.splice(i, 1); renderPh(); upd() }; d.append(im, b); return d }));
-            $("pstrip").replaceChildren(...photos.map(o => { const im = document.createElement("img"); im.src = o.url; im.alt = ""; im.className = "h-20 w-20 object-cover bg-white p-1 shadow"; return im }));
-        }
-        $("phf").onchange = e => { const p = PL[v("plan")]; let m = ""; for (const x of e.target.files) { const r = bad(x); if (r) { m = r; continue } if (photos.length >= p.ph) { m = "Your plan allows up to " + p.ph + " photos."; break } photos.push({ file: x, url: URL.createObjectURL(x) }) } $("err").textContent = m; e.target.value = ""; renderPh(); upd() };
-        function clearBg() { if (!bg) return; URL.revokeObjectURL(bg.url); bg = null; $("bgf").value = ""; $("bgi").classList.add("hidden") }
-        $("bgf").onchange = e => { const x = e.target.files[0]; if (!x) return; const r = bad(x); if (r) { $("err").textContent = r; e.target.value = ""; return } $("err").textContent = ""; clearBg(); bg = { file: x, url: URL.createObjectURL(x) }; for (const o of f.elements.paper) o.checked = false; $("bgn").textContent = x.name; $("bgi").classList.remove("hidden"); upd() };
-        $("bgx").onclick = () => { clearBg(); f.elements.paper.value = "cream"; upd() };
-        for (const o of f.elements.paper) o.addEventListener("change", () => { clearBg(); upd() });
-        f.addEventListener("input", upd); upd();
-        function order() { const p = PL[v("plan")]; return { plan: v("plan"), price: p.p, date: $("dt").value, paper: bg ? "custom" : v("paper"), photoCount: photos.length, ink: v("ink"), font: v("font"), stamp: v("stamp"), signoff: $("so").value, text: $("tx").value, email: $("em").value, recipient: { name: $("rn").value, address: $("ad").value, city: $("ci").value, country: $("co").value }, status: "unpaid" } }
-        function check() {
-            const o = order(), p = PL[o.plan];
-            if (!o.text.trim()) return "Please write your letter first.";
-            if (!o.date || o.date < $("dt").min || o.date > $("dt").max) return "Pick a delivery date within the allowed range.";
-            if (!o.recipient.name || !o.recipient.address || !o.recipient.city || !o.recipient.country) return "Please complete the delivery details.";
-            if (!/^\S+@\S+\.\S+$/.test(o.email)) return "Please enter a valid email so we can send your receipt.";
-            return "";
-        }
-        $("rv").onclick = () => {
-            const e = check(); $("err").textContent = e; if (e) return;
-            const o = order(), p = PL[o.plan], rows = [["Plan", p.n], ["For", o.recipient.name + ", " + o.recipient.city + ", " + o.recipient.country], ["Delivery date", fmt(o.date)], ["Paper and ink", (bg ? "Your own page" : v("paper")) + ", " + v("ink")], ["Photos", photos.length + " attached"], ["Total", "$" + p.p]];
-            $("sm").replaceChildren(...rows.flatMap(([k, x]) => { const d = document.createElement("dt"), e = document.createElement("dd"); d.textContent = k; d.className = "text-[#14213D]/60"; e.textContent = x; e.className = "font-medium mb-2"; return [d, e] }));
-            $("rw").classList.remove("hidden"); $("rw").scrollIntoView({ behavior: "smooth" });
-        };
-        $("ed").onclick = () => { $("rw").classList.add("hidden"); window.scrollTo({ top: 0, behavior: "smooth" }) };
-        $("pay").onclick = async () => {
-            const o = order(), ms = $("ms"); ms.textContent = "Please wait...";
-            try { localStorage.setItem("slowpost_order", JSON.stringify(o)) } catch (e) { }
-            try {
-                let url = PAY_LINKS[o.plan];
-                if (API_URL) { const fd = new FormData(); fd.append("order", JSON.stringify(o)); photos.forEach(x => fd.append("photos", x.file)); if (bg) fd.append("background", bg.file); const r = await fetch(API_URL, { method: "POST", body: fd }); const d = await r.json(); url = d.payment_url || url; }
-                if (url) location.href = url; else ms.textContent = "Demo mode: your order is saved on this device only. Connect a backend and payment link to go live.";
-            } catch (e) { ms.textContent = "Something went wrong. Please try again." }
-        };
-    </script>
-</body>
-
-</html>
+<div class="airmail h-2"></div>
+<header class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
+<a href="index.html" class="serif text-2xl text-[#1D4E89]">Slowpost</a>
+<nav class="hidden md:flex gap-7 text-[15px]"><a href="index.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Home</a><a href="how-it-works.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">How it works</a><a href="letters.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Letters</a><a href="pricing.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Pricing</a><a href="contact.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Contact</a></nav>
+<details class="md:hidden relative"><summary class="cursor-pointer list-none px-4 py-2 rounded-full border border-[#14213D]/20 text-sm">Menu</summary>
+<nav class="absolute right-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-[#14213D]/10 p-4 flex flex-col gap-2 z-10"><a href="index.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Home</a><a href="how-it-works.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">How it works</a><a href="letters.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Letters</a><a href="pricing.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Pricing</a><a href="contact.html" class="text-[#14213D]/80 hover:text-[#1D4E89] py-1">Contact</a></nav></details>
+</header>
+<main>
+<section class="max-w-6xl mx-auto px-5 pt-6"><h1 class="serif text-4xl md:text-5xl">Write your letter</h1>
+<p class="mt-3 text-[#14213D]/75 max-w-xl leading-relaxed">Compose it, pick the paper and ink, then pay only when you are happy with it.</p>
+<div class="mt-10 grid lg:grid-cols-2 gap-10">
+<form id="f" class="space-y-8 order-2 lg:order-1" novalidate>
+<fieldset><legend class="block text-sm font-medium mb-1">1. Plan</legend><div class="grid grid-cols-3 gap-3"><label class="cursor-pointer text-center text-xs"><input type="radio" name="plan" value="postcard" class="peer sr-only"><span class="block rounded-lg border border-[#14213D]/20 py-3 font-medium peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">Postcard</span><span class="block mt-1">Postcard · $5</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="plan" value="letter" class="peer sr-only" checked><span class="block rounded-lg border border-[#14213D]/20 py-3 font-medium peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">Letter</span><span class="block mt-1">Letter · $12</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="plan" value="capsule" class="peer sr-only"><span class="block rounded-lg border border-[#14213D]/20 py-3 font-medium peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">Time capsule</span><span class="block mt-1">Time capsule · $29</span></label></div></fieldset>
+<fieldset class="grid sm:grid-cols-2 gap-4"><legend class="block text-sm font-medium mb-1 sm:col-span-2">2. Who is it for?</legend>
+<div><label class="block text-sm font-medium mb-1" for="rn">Recipient name</label><input id="rn" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
+<div><label class="block text-sm font-medium mb-1" for="em">Your email</label><input id="em" type="email" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
+<div class="sm:col-span-2"><label class="block text-sm font-medium mb-1" for="ad">Delivery address</label><input id="ad" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
+<div><label class="block text-sm font-medium mb-1" for="ci">City</label><input id="ci" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div>
+<div><label class="block text-sm font-medium mb-1" for="co">Country</label><input id="co" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></div></fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">3. Delivery date</legend><input id="dt" type="date" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"><p id="dh" class="mt-1 text-sm text-[#14213D]/60"></p></fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">4. Paper</legend><div class="grid grid-cols-5 gap-3"><label class="cursor-pointer text-center text-xs"><input type="radio" name="paper" value="cream" class="peer sr-only" checked><span class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#F7EFD9"></span><span class="block mt-1">Classic cream</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="paper" value="white" class="peer sr-only"><span class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#FFFFFF"></span><span class="block mt-1">Bright white</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="paper" value="lined" class="peer sr-only"><span class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#CFE0F0"></span><span class="block mt-1">Lined</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="paper" value="blue" class="peer sr-only"><span class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#1D4E89"></span><span class="block mt-1">Airmail</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="paper" value="kraft" class="peer sr-only"><span class="block h-12 rounded-lg border border-[#14213D]/20 peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#D9BC8E"></span><span class="block mt-1">Kraft</span></label></div><div class="mt-5"><label class="block text-sm font-medium mb-1" for="bgf">Or use your own page as the background</label>
+<input id="bgf" type="file" accept="image/png,image/jpeg,image/webp" class="block w-full text-sm file:mr-3 file:rounded-full file:border-0 file:bg-[#1D4E89] file:text-white file:px-5 file:py-2 file:cursor-pointer">
+<p id="bgi" class="hidden mt-2 text-sm"><span id="bgn"></span> <button type="button" id="bgx" class="underline text-[#D7263D] ml-2">Remove</button></p>
+<label class="mt-3 flex items-center gap-2 text-sm"><input type="checkbox" id="ov" checked> Add a soft white layer so the writing stays easy to read</label>
+<p class="mt-1 text-xs text-[#14213D]/60">JPG, PNG or WebP, up to 5 MB.</p></div>
+</fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">5. Ink colour</legend><div class="grid grid-cols-5 gap-3"><label class="cursor-pointer text-center text-xs"><input type="radio" name="ink" value="#14213D" class="peer sr-only" checked><span class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#14213D"></span><span class="block mt-1">Navy</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="ink" value="#111111" class="peer sr-only"><span class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#111111"></span><span class="block mt-1">Black</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="ink" value="#B3202F" class="peer sr-only"><span class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#B3202F"></span><span class="block mt-1">Red</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="ink" value="#1E6B4B" class="peer sr-only"><span class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#1E6B4B"></span><span class="block mt-1">Green</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="ink" value="#5B3FA0" class="peer sr-only"><span class="block h-10 w-10 mx-auto rounded-full peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="background:#5B3FA0"></span><span class="block mt-1">Violet</span></label></div></fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">6. Handwriting</legend><div class="grid grid-cols-3 gap-3"><label class="cursor-pointer text-center text-xs"><input type="radio" name="font" value="Caveat" class="peer sr-only" checked><span class="block rounded-lg border border-[#14213D]/20 py-2 text-lg peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="font-family:'Caveat'">Hello</span><span class="block mt-1">Caveat</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="font" value="Kalam" class="peer sr-only"><span class="block rounded-lg border border-[#14213D]/20 py-2 text-lg peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="font-family:'Kalam'">Hello</span><span class="block mt-1">Kalam</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="font" value="Homemade Apple" class="peer sr-only"><span class="block rounded-lg border border-[#14213D]/20 py-2 text-lg peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4" style="font-family:'Homemade Apple'">Hello</span><span class="block mt-1">Homemade</span></label></div></fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">7. Stamp</legend><div class="grid grid-cols-4 gap-3"><label class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="🌍" class="peer sr-only" checked><span class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">🌍</span><span class="block mt-1">Globe</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="🗼" class="peer sr-only"><span class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">🗼</span><span class="block mt-1">Tower</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="💌" class="peer sr-only"><span class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">💌</span><span class="block mt-1">Heart</span></label><label class="cursor-pointer text-center text-xs"><input type="radio" name="stamp" value="⭐" class="peer sr-only"><span class="block rounded-lg border-2 border-dashed border-[#14213D]/30 py-2 text-2xl peer-checked:ring-4 peer-checked:ring-[#1D4E89]/40 peer-focus-visible:ring-4">⭐</span><span class="block mt-1">Star</span></label></div></fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">8. Photos</legend><p id="phn" class="text-sm text-[#14213D]/60 mb-2"></p>
+<input id="phf" type="file" accept="image/png,image/jpeg,image/webp" multiple class="block w-full text-sm file:mr-3 file:rounded-full file:border-0 file:bg-[#1D4E89] file:text-white file:px-5 file:py-2 file:cursor-pointer">
+<div id="phg" class="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-3"></div><p class="mt-2 text-xs text-[#14213D]/60">JPG, PNG or WebP, up to 5 MB each.</p></fieldset>
+<fieldset><legend class="block text-sm font-medium mb-1">9. Your letter</legend>
+<textarea id="tx" rows="9" class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3" placeholder="Dear future me..."></textarea><p id="cc" class="mt-1 text-sm text-[#14213D]/60 text-right"></p>
+<label class="block text-sm font-medium mb-1 mt-4" for="so">Sign-off</label><input id="so" value="With love," class="w-full rounded-lg border border-[#14213D]/25 bg-white px-4 py-3"></fieldset>
+<p id="err" class="text-[#D7263D] font-medium" role="alert"></p>
+<button type="button" id="rv" class="rounded-full bg-[#D7263D] text-white font-medium px-8 py-3 hover:bg-[#b81d32] transition">Review and confirm</button>
+</form>
+<div class="order-1 lg:order-2"><div class="lg:sticky lg:top-6">
+<p class="text-sm font-medium mb-2">Live preview</p>
+<div id="pp" class="paper-cream rounded-lg shadow-xl p-8 min-h-[420px] relative"><div id="st" class="absolute top-4 right-4 text-3xl border-2 border-dashed border-[#14213D]/30 rounded p-1 bg-white/50">🌍</div>
+<p id="to" class="text-sm opacity-60 pr-20" style="font-family:'DM Sans'"></p><div id="pv" class="mt-6"></div><p id="sg" class="mt-6"></p><div id="pstrip" class="mt-6 flex flex-wrap gap-3"></div></div></div></div>
+</div>
+<section id="rw" class="hidden mt-14 max-w-xl mx-auto bg-white rounded-2xl border border-[#14213D]/10 p-8" aria-live="polite">
+<h2 class="serif text-3xl">Confirm your order</h2><dl id="sm" class="mt-6 space-y-2 text-[15px]"></dl>
+<p class="mt-6 text-sm text-[#14213D]/60">Once paid, your letter is locked and stored until your delivery date.</p>
+<div class="mt-6 flex flex-wrap gap-3"><button type="button" id="ed" class="rounded-full border-2 border-[#1D4E89] text-[#1D4E89] font-medium px-6 py-3 hover:bg-[#1D4E89] hover:text-white transition">Edit letter</button>
+<button type="button" id="pay" class="rounded-full bg-[#D7263D] text-white font-medium px-8 py-3 hover:bg-[#b81d32] transition">Pay now</button></div>
+<p id="ms" class="mt-4 text-sm text-[#1D4E89]"></p></section>
+</section></main>
+<footer class="mt-24 bg-[#14213D] text-white/80">
+<div class="airmail h-2"></div>
+<div class="max-w-6xl mx-auto px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
+<div><p class="serif text-xl text-white">Slowpost</p><p class="mt-3 max-w-xs leading-relaxed">Letters to the future, sealed today and delivered on the day you pick.</p></div>
+<div class="flex flex-col gap-2"><a href="index.html" class="hover:text-white">Home</a><a href="how-it-works.html" class="hover:text-white">How it works</a><a href="letters.html" class="hover:text-white">Letters</a><a href="pricing.html" class="hover:text-white">Pricing</a><a href="contact.html" class="hover:text-white">Contact</a></div>
+<div><p>hello@slowpost.example</p><p class="mt-2">Mon–Fri, 9am–5pm</p><p class="mt-6 text-white/50">© 2026 Slowpost. Demo site.</p></div>
+</div></footer>
+<script>
+const API_URL="";            // e.g. "/api/orders" once your backend exists
+const PAY_LINKS={postcard:"",letter:"",capsule:""}; // paste gateway links here
+const PL={postcard:{n:"Postcard",p:5,y:1,c:600,ph:0},letter:{n:"Letter",p:12,y:5,c:2500,ph:3},capsule:{n:"Time capsule",p:29,y:10,c:5000,ph:10}};
+const $=id=>document.getElementById(id), f=$("f"), v=n=>f.elements[n].value;
+const fmt=s=>new Date(s+"T00:00").toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+const iso=(d)=>d.toISOString().slice(0,10);
+const q=new URLSearchParams(location.search).get("plan"); if(PL[q]) f.elements.plan.value=q;
+function upd(){
+ const p=PL[v("plan")], t=$("tx");
+ t.maxLength=p.c; $("cc").textContent=t.value.length+" / "+p.c+" characters";
+ const a=new Date(); a.setDate(a.getDate()+30); const b=new Date(); b.setFullYear(b.getFullYear()+p.y);
+ $("dt").min=iso(a); $("dt").max=iso(b); $("dh").textContent="Choose a date between "+fmt(iso(a))+" and "+fmt(iso(b))+".";
+ const pp=$("pp"); pp.className=(bg?"":"paper-"+v("paper"))+" rounded-lg shadow-xl p-8 min-h-[420px] relative";
+ pp.style.backgroundImage=bg?(($("ov").checked?"linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.55)),":"")+"url("+bg.url+")"):""; pp.style.backgroundSize=bg?"cover":""; pp.style.backgroundPosition=bg?"center":"";
+ if(photos.length>p.ph){while(photos.length>p.ph)URL.revokeObjectURL(photos.pop().url);renderPh();}
+ $("phf").disabled=!p.ph; $("phn").textContent=p.ph?"Your plan allows up to "+p.ph+" photos ("+photos.length+" added).":"Postcards do not include photos. Choose Letter or Time capsule to attach some.";
+ pp.style.color=v("ink"); const fn=v("font"); pp.style.fontFamily="'"+fn+"',cursive";
+ pp.style.fontSize=fn==="Homemade Apple"?"16px":fn==="Kalam"?"19px":"24px";
+ $("st").textContent=v("stamp");
+ $("to").textContent=($("rn").value?"To: "+$("rn").value:"To: ...")+($("dt").value?"  ·  Arrives "+fmt($("dt").value):"");
+ $("pv").textContent=t.value||"Your words will appear here as you type."; $("sg").textContent=$("so").value;
+}
+let bg=null; const photos=[];
+const OK=["image/jpeg","image/png","image/webp"],MAX=5*1024*1024;
+const bad=x=>!OK.includes(x.type)?"Please choose JPG, PNG or WebP images.":x.size>MAX?"Each image must be under 5 MB.":"";
+function renderPh(){
+ $("phg").replaceChildren(...photos.map((o,i)=>{const d=document.createElement("div");d.className="relative";const im=document.createElement("img");im.src=o.url;im.alt="Photo "+(i+1);im.className="h-20 w-full object-cover rounded-lg";const b=document.createElement("button");b.type="button";b.textContent="\u00d7";b.setAttribute("aria-label","Remove photo "+(i+1));b.className="absolute -top-2 -right-2 h-6 w-6 rounded-full bg-[#D7263D] text-white text-sm leading-6";b.onclick=()=>{URL.revokeObjectURL(o.url);photos.splice(i,1);renderPh();upd()};d.append(im,b);return d}));
+ $("pstrip").replaceChildren(...photos.map(o=>{const im=document.createElement("img");im.src=o.url;im.alt="";im.className="h-20 w-20 object-cover bg-white p-1 shadow";return im}));
+}
+$("phf").onchange=e=>{const p=PL[v("plan")];let m="";for(const x of e.target.files){const r=bad(x);if(r){m=r;continue}if(photos.length>=p.ph){m="Your plan allows up to "+p.ph+" photos.";break}photos.push({file:x,url:URL.createObjectURL(x)})}$("err").textContent=m;e.target.value="";renderPh();upd()};
+function clearBg(){if(!bg)return;URL.revokeObjectURL(bg.url);bg=null;$("bgf").value="";$("bgi").classList.add("hidden")}
+$("bgf").onchange=e=>{const x=e.target.files[0];if(!x)return;const r=bad(x);if(r){$("err").textContent=r;e.target.value="";return}$("err").textContent="";clearBg();bg={file:x,url:URL.createObjectURL(x)};for(const o of f.elements.paper)o.checked=false;$("bgn").textContent=x.name;$("bgi").classList.remove("hidden");upd()};
+$("bgx").onclick=()=>{clearBg();f.elements.paper.value="cream";upd()};
+for(const o of f.elements.paper)o.addEventListener("change",()=>{clearBg();upd()});
+f.addEventListener("input",upd); upd();
+function order(){const p=PL[v("plan")];return{plan:v("plan"),price:p.p,date:$("dt").value,paper:bg?"custom":v("paper"),photoCount:photos.length,ink:v("ink"),font:v("font"),stamp:v("stamp"),signoff:$("so").value,text:$("tx").value,email:$("em").value,recipient:{name:$("rn").value,address:$("ad").value,city:$("ci").value,country:$("co").value},status:"unpaid"}}
+function check(){
+ const o=order(), p=PL[o.plan];
+ if(!o.text.trim()) return "Please write your letter first.";
+ if(!o.date||o.date<$("dt").min||o.date>$("dt").max) return "Pick a delivery date within the allowed range.";
+ if(!o.recipient.name||!o.recipient.address||!o.recipient.city||!o.recipient.country) return "Please complete the delivery details.";
+ if(!/^\S+@\S+\.\S+$/.test(o.email)) return "Please enter a valid email so we can send your receipt.";
+ return "";
+}
+$("rv").onclick=()=>{
+ const e=check(); $("err").textContent=e; if(e) return;
+ const o=order(), p=PL[o.plan], rows=[["Plan",p.n],["For",o.recipient.name+", "+o.recipient.city+", "+o.recipient.country],["Delivery date",fmt(o.date)],["Paper and ink",(bg?"Your own page":v("paper"))+", "+v("ink")],["Photos",photos.length+" attached"],["Total","$"+p.p]];
+ $("sm").replaceChildren(...rows.flatMap(([k,x])=>{const d=document.createElement("dt"),e=document.createElement("dd");d.textContent=k;d.className="text-[#14213D]/60";e.textContent=x;e.className="font-medium mb-2";return[d,e]}));
+ $("rw").classList.remove("hidden"); $("rw").scrollIntoView({behavior:"smooth"});
+};
+$("ed").onclick=()=>{$("rw").classList.add("hidden");window.scrollTo({top:0,behavior:"smooth"})};
+$("pay").onclick=async()=>{
+ const o=order(), ms=$("ms"); ms.textContent="Please wait...";
+ try{localStorage.setItem("slowpost_order",JSON.stringify(o))}catch(e){}
+ try{
+  let url=PAY_LINKS[o.plan];
+  if(API_URL){const fd=new FormData();fd.append("order",JSON.stringify(o));photos.forEach(x=>fd.append("photos",x.file));if(bg)fd.append("background",bg.file);const r=await fetch(API_URL,{method:"POST",body:fd});const d=await r.json();url=d.payment_url||url;}
+  if(url) location.href=url; else location.href="success.html?demo=1";
+ }catch(e){ms.textContent="Something went wrong. Please try again."}
+};
+</script>
+</body></html>
